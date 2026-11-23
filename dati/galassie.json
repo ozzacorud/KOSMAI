@@ -13,7 +13,8 @@
    "descrizione": "6 civiltà, 40 generazioni ciascuna, stessa legge nascosta. Esperimento pre-registrato.",
    "x": 0.22,
    "y": 0.42,
-   "colore": "#f2c14e"
+   "colore": "#f2c14e",
+   "conoscenza": "dati/conoscenza/conferma-d2.json"
   },
   {
    "id": "calibrato-replica",
