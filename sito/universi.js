@@ -5,7 +5,7 @@
   "use strict";
   const NS = "http://www.w3.org/2000/svg";
   const $ = (id) => document.getElementById(id);
-  const stato = { galassie: null, evo: {}, pianeti: {}, galassia: null, seme: null, gen: 1, timer: null };
+  const stato = { galassie: null, evo: {}, pianeti: {}, rete: null, istanza: 1, galassia: null, seme: null, gen: 1, timer: null };
 
   const prendi = (url) => fetch(url).then((r) => {
     if (!r.ok) throw new Error(url + ": " + r.status);
@@ -79,9 +79,9 @@
   // ---------------------------------------------------------------- livello 1: spazio profondo
   function livello1() {
     fermaPlay();
-    $("comandi").hidden = true; $("pannelli").hidden = true;
     const G = stato.galassie;
-    const pos = (id) => { const g = G.galassie.find((x) => x.id === id); return [g.x * 1200, g.y * 620]; };
+    $("comandi").hidden = !stato.rete; $("pannelli").hidden = !stato.rete;
+    const pos = (id) => { const g = G.galassie.find((x) => x.id === id); return [g.x * 1200, g.y * 560]; };
     let s = "";
     G.scambi.forEach((c) => {
       const [x1, y1] = pos(c.da), [x2, y2] = pos(c.a);
@@ -106,9 +106,10 @@
       s += `<text x="${x}" y="${y + r * 0.45 + 40}" text-anchor="middle" class="etichetta-sotto">${esc(sotto)}</text></g>`;
     });
     $("livello").innerHTML = `<h1>Spazio profondo</h1>
-      <p class="sotto">Ogni galassia è un universo con le sue regole. Dentro, ogni pianeta è una civiltà di agenti AI che si passa la conoscenza di generazione in generazione. Entra nella galassia accesa.</p>
-      <svg viewBox="0 0 1200 620" role="group" aria-label="Galassie">${s}</svg>
+      <p class="sotto">Ogni galassia è un universo con le sue regole. Dentro, ogni pianeta è una civiltà di agenti AI che si passa la conoscenza di generazione in generazione. Entra nella galassia accesa. Sotto, i bagliori veri: la conoscenza che passa da un universo all'altro.</p>
+      <svg viewBox="0 0 1200 ${stato.rete ? 1010 : 580}" role="group" aria-label="Galassie">${s}${stato.rete ? reteStatica() : ""}<g id="impulsi"></g></svg>
       <div id="scheda" class="scheda-galassia" hidden></div>`;
+    if (stato.rete) { $("barra").max = stato.rete.istanze.length; if (stato.istanza > stato.rete.istanze.length) stato.istanza = 1; disegnaRete(); }
     document.querySelectorAll(".galassia").forEach((el) => {
       const apri = () => {
         const g = G.galassie.find((x) => x.id === el.dataset.id);
@@ -121,6 +122,72 @@
       el.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); apri(); } });
     });
     briciole();
+  }
+
+  // ---------------------------------------------------------------- bagliori veri: la rete di scambio (MVP-4)
+  // Dati: dati/scambi/mvp4.json. Ogni impulso è un messaggio reale fra due universi; il colore è il suo esito.
+  const ESITO = {
+    valid: ["#f2c14e", "accettato dopo la ri-validazione"],
+    adaptable: ["#ffe08a", "accettato con un adattamento"],
+    invalid: ["#b18cff", "arrivato, ma la ri-validazione lo respinge"],
+    incompatible: ["#7d8399", "fermato: il destinatario non può usarlo"],
+    tampered: ["#ff6b6b", "manomesso: fermato dall'hash"],
+  };
+  const NODI = { "A": [250, 700], "B": [600, 700], "C": [950, 700], "A'": [170, 920], "B'": [450, 920], "C'": [750, 920], "D": [1030, 920] };
+  const idArco = (da, a) => "arco-" + (da + "-" + a).replace(/'/g, "p");
+  function curva(da, a) {
+    const [x1, y1] = NODI[da], [x2, y2] = NODI[a];
+    const qy = y1 === y2 ? y1 + 70 : (y1 + y2) / 2;
+    return `M${x1},${y1} Q${(x1 + x2) / 2},${qy} ${x2},${y2}`;
+  }
+  function reteStatica() {
+    const R = stato.rete;
+    let s = `<line x1="40" x2="1160" y1="600" y2="600" stroke="#ffffff14"/>
+      <text x="40" y="632" class="etichetta">Rete di scambio fra universi</text>
+      <text x="40" y="650" class="etichetta-sotto">Dati veri (MVP-4): 3 universi pubblicano ciò che hanno scoperto, 4 lo ricevono. Agenti a ricerca casuale, non AI.</text>`;
+    R.archi.forEach((a) => {
+      const tot = Object.values(a.esiti).reduce((x, y) => x + y, 0), acc = a.esiti.valid + a.esiti.adaptable;
+      s += `<path id="${idArco(a.da, a.a)}" d="${curva(a.da, a.a)}" fill="none" stroke="${acc ? "#f2c14e" : "#5a6090"}" stroke-width="${(0.6 + tot / 25).toFixed(1)}" opacity="${acc ? (0.25 + acc / tot).toFixed(2) : 0.25}"${acc ? ' class="filo-vero"' : ""}><title>${esc(a.da)} → ${esc(a.a)}: ${tot} messaggi, ${acc} accettati</title></path>`;
+    });
+    R.universi.forEach((u, i) => {
+      const [x, y] = NODI[u.id], rr = rng(500 + i), col = u.ruolo === "mittente" ? "#8f7bff" : "#5aa0ff";
+      s += `<g class="nodo-rete" data-u="${esc(u.id)}" role="img" aria-label="Universo ${esc(u.id)}: ${esc(u.descrizione)}"><title>Universo ${esc(u.id)}: ${esc(u.descrizione)}</title>`;
+      s += `<ellipse cx="${x}" cy="${y}" rx="46" ry="20" fill="${col}" opacity=".28"/><circle cx="${x}" cy="${y}" r="5" fill="#fff2c8"/>`;
+      for (let k = 0; k < 26; k++) {
+        const a = rr() * 6.283, d = rr() * 40;
+        s += `<circle cx="${(x + Math.cos(a) * d).toFixed(0)}" cy="${(y + Math.sin(a) * d * 0.45).toFixed(0)}" r="${(0.5 + rr() * 0.8).toFixed(1)}" fill="#fff" opacity="${(0.3 + rr() * 0.6).toFixed(2)}"/>`;
+      }
+      s += `<text x="${x}" y="${y + (y > 800 ? 42 : -30)}" text-anchor="middle" class="etichetta">${esc(u.id)}</text></g>`;
+    });
+    return s;
+  }
+  function disegnaRete() {
+    const R = stato.rete, ist = R.istanze[stato.istanza - 1];
+    let s = "";
+    ist.messaggi.forEach((m, i) => {
+      const [col] = ESITO[m.esito], fine = m.esito === "tampered" ? 0.35 : m.esito === "incompatible" ? 0.7 : 1;
+      const rit = (m.salto === 2 ? 0.9 : 0) + i * 0.06;
+      s += `<circle r="${m.esito === "valid" || m.esito === "adaptable" ? 7 : 5}" fill="${col}" opacity="0">
+        <animateMotion dur="1.1s" begin="${rit.toFixed(2)}s" fill="freeze" keyPoints="0;${fine}" keyTimes="0;1" calcMode="linear"><mpath href="#${idArco(m.da, m.a)}"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;${m.esito === "valid" || m.esito === "adaptable" ? 1 : 0}" keyTimes="0;.1;.8;1" dur="1.1s" begin="${rit.toFixed(2)}s" fill="freeze"/></circle>`;
+      if (m.esito === "valid" || m.esito === "adaptable") {
+        const [x, y] = NODI[m.a];
+        s += `<circle cx="${x}" cy="${y}" r="30" fill="#f2c14e" opacity="0"><animate attributeName="opacity" values="0;.6;0" dur="1s" begin="${(rit + 1.1).toFixed(2)}s" fill="freeze"/></circle>`;
+      }
+    });
+    const imp = $("impulsi");
+    if (imp) { imp.innerHTML = s; const svg = imp.ownerSVGElement; if (svg && svg.setCurrentTime) svg.setCurrentTime(0); }
+    const conta = {}; ist.messaggi.forEach((m) => { conta[m.esito] = (conta[m.esito] || 0) + 1; });
+    const g = R.gate;
+    $("pannelli").innerHTML = `
+      <div class="pannello"><h2>Istanza ${stato.istanza}: i messaggi</h2>${Object.keys(ESITO).map((k) => `<div class="riga"><span><i class="pallino" style="background:${ESITO[k][0]}"></i>${ESITO[k][1]}</span><span>${conta[k] || 0}</span></div>`).join("")}</div>
+      <div class="pannello"><h2>Perché serve il contratto</h2>
+        <div class="riga"><span>Conoscenze false accettate senza controlli</span><span>${g.falsi_senza_contratto}</span></div>
+        <div class="riga"><span>Conoscenze false accettate con il contratto</span><span>${g.falsi_con_contratto}</span></div>
+        <div class="riga"><span>Messaggi manomessi rilevati</span><span>${g.manomessi_rilevati} su ${g.manomessi}</span></div>
+        <div class="riga"><span>Accettati con provenienza ricostruibile</span><span>${g.provenienza_ok} su ${g.accettati}</span></div></div>
+      <div class="pannello"><h2>Come leggerlo</h2><p style="margin:0;font-size:14px;color:var(--tenue)">Ogni impulso è un messaggio vero: un universo manda ciò che ha scoperto a un altro, con regole uguali o diverse. Chi riceve non si fida: controlla l'integrità, se può usarlo e lo rimette alla prova nel proprio mondo. Solo allora si accende. Chi accetta può ripassarlo a un terzo universo (secondo salto). ${g.istanze} istanze, esperimento pre-registrato, ${g.superato ? "gate superato" : "gate non superato"}.</p></div>`;
+    aggiornaBarra();
   }
 
   // ---------------------------------------------------------------- livello 2: dentro la galassia
@@ -217,23 +284,30 @@
 
   // ---------------------------------------------------------------- comandi
   function aggiornaBarra() {
-    $("barra").value = stato.gen;
-    $("gen").textContent = "generazione " + stato.gen + " di " + $("barra").max;
+    if (!stato.galassia) {
+      $("barra").value = stato.istanza;
+      $("gen").textContent = stato.rete ? "istanza " + stato.istanza + " di " + $("barra").max + " · seme " + stato.rete.istanze[stato.istanza - 1].seme : "";
+    } else {
+      $("barra").value = stato.gen;
+      $("gen").textContent = "generazione " + stato.gen + " di " + $("barra").max;
+    }
     $("play").textContent = stato.timer ? "❚❚" : "▶";
     $("play").setAttribute("aria-label", stato.timer ? "Pausa" : "Riproduci");
   }
-  const ridisegna = () => (stato.seme ? disegna3() : disegna2());
+  const ridisegna = () => (!stato.galassia ? disegnaRete() : stato.seme ? disegna3() : disegna2());
+  const passo = () => (stato.galassia ? "gen" : "istanza");
   function fermaPlay() { clearInterval(stato.timer); stato.timer = null; }
   $("play").addEventListener("click", () => {
     if (stato.timer) { fermaPlay(); aggiornaBarra(); return; }
-    if (stato.gen >= +$("barra").max) stato.gen = 1;
+    const k = passo();
+    if (stato[k] >= +$("barra").max) stato[k] = 1;
     stato.timer = setInterval(() => {
-      if (stato.gen >= +$("barra").max) { fermaPlay(); aggiornaBarra(); scriviHash(); return; }
-      stato.gen++; ridisegna(); scriviHash();
-    }, 650);
+      if (stato[k] >= +$("barra").max) { fermaPlay(); aggiornaBarra(); scriviHash(); return; }
+      stato[k]++; ridisegna(); scriviHash();
+    }, k === "gen" ? 650 : 2600);
     ridisegna();
   });
-  $("barra").addEventListener("input", () => { fermaPlay(); stato.gen = +$("barra").value; ridisegna(); scriviHash(); });
+  $("barra").addEventListener("input", () => { fermaPlay(); stato[passo()] = +$("barra").value; ridisegna(); scriviHash(); });
 
   // ---------------------------------------------------------------- navigazione (#galassia/seme/gen)
   function briciole() {
@@ -265,6 +339,7 @@
     cielo();
     try {
       stato.galassie = await prendi("dati/galassie.json");
+      if (stato.galassie.rete) stato.rete = await prendi(stato.galassie.rete.dati).catch(() => null);
       const [gal, seme, gen] = location.hash.slice(1).split("/");
       stato.gen = Math.max(1, +gen || 1);
       await vai(gal || null, +seme || null);

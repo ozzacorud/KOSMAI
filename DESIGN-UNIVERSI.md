@@ -51,7 +51,7 @@ Note oneste:
 | Galassia Conferma (6 pianeti) | **esplorabile**, dati completi |
 | Galassie Replica (12) ed Estensione (4) | dati grezzi nel repo (`results/calibrato-replica`, `results/estensione-40`), da esportare |
 | Passaggio di conoscenza tra generazioni dello stesso pianeta | **c'è** (atmosfera, diario, eredità) |
-| Bagliori tra galassie (scambio tra universi) | **non esiste**: disegnati come fili tratteggiati "fase futura" |
+| Bagliori tra galassie (scambio tra universi) | **c'è con agenti casuali**: rete di MVP-4 sotto le galassie, ogni impulso un messaggio vero (`dati/scambi/mvp4.json`, `kosmai_scambi.py`). Fra le galassie delle civiltà AI resta futuro (fili tratteggiati) |
 | Il nostro universo che impara dagli altri | **non esiste**: serve un esperimento nuovo con chiamate AI |
 
 ## Roadmap aggiornata

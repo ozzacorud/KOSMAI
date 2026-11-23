@@ -1,0 +1,6064 @@
+{
+ "agenti": "ricerca casuale (non LLM)",
+ "archi": [
+  {
+   "a": "A'",
+   "da": "A",
+   "esiti": {
+    "adaptable": 1,
+    "incompatible": 21,
+    "invalid": 14,
+    "tampered": 15,
+    "valid": 9
+   }
+  },
+  {
+   "a": "B'",
+   "da": "A",
+   "esiti": {
+    "adaptable": 8,
+    "incompatible": 21,
+    "invalid": 17,
+    "tampered": 14,
+    "valid": 0
+   }
+  },
+  {
+   "a": "C'",
+   "da": "A",
+   "esiti": {
+    "adaptable": 1,
+    "incompatible": 22,
+    "invalid": 20,
+    "tampered": 17,
+    "valid": 0
+   }
+  },
+  {
+   "a": "D",
+   "da": "A",
+   "esiti": {
+    "adaptable": 0,
+    "incompatible": 43,
+    "invalid": 0,
+    "tampered": 17,
+    "valid": 0
+   }
+  },
+  {
+   "a": "B'",
+   "da": "A'",
+   "esiti": {
+    "adaptable": 8,
+    "incompatible": 0,
+    "invalid": 3,
+    "tampered": 0,
+    "valid": 0
+   }
+  },
+  {
+   "a": "A'",
+   "da": "B",
+   "esiti": {
+    "adaptable": 1,
+    "incompatible": 15,
+    "invalid": 34,
+    "tampered": 10,
+    "valid": 0
+   }
+  },
+  {
+   "a": "B'",
+   "da": "B",
+   "esiti": {
+    "adaptable": 2,
+    "incompatible": 17,
+    "invalid": 7,
+    "tampered": 8,
+    "valid": 26
+   }
+  },
+  {
+   "a": "C'",
+   "da": "B",
+   "esiti": {
+    "adaptable": 0,
+    "incompatible": 13,
+    "invalid": 29,
+    "tampered": 18,
+    "valid": 0
+   }
+  },
+  {
+   "a": "D",
+   "da": "B",
+   "esiti": {
+    "adaptable": 0,
+    "incompatible": 39,
+    "invalid": 0,
+    "tampered": 21,
+    "valid": 0
+   }
+  },
+  {
+   "a": "C'",
+   "da": "B'",
+   "esiti": {
+    "adaptable": 0,
+    "incompatible": 0,
+    "invalid": 36,
+    "tampered": 0,
+    "valid": 0
+   }
+  },
+  {
+   "a": "A'",
+   "da": "C",
+   "esiti": {
+    "adaptable": 0,
+    "incompatible": 23,
+    "invalid": 15,
+    "tampered": 22,
+    "valid": 0
+   }
+  },
+  {
+   "a": "B'",
+   "da": "C",
+   "esiti": {
+    "adaptable": 0,
+    "incompatible": 26,
+    "invalid": 20,
+    "tampered": 14,
+    "valid": 0
+   }
+  },
+  {
+   "a": "C'",
+   "da": "C",
+   "esiti": {
+    "adaptable": 2,
+    "incompatible": 29,
+    "invalid": 10,
+    "tampered": 16,
+    "valid": 3
+   }
+  },
+  {
+   "a": "D",
+   "da": "C",
+   "esiti": {
+    "adaptable": 0,
+    "incompatible": 43,
+    "invalid": 0,
+    "tampered": 17,
+    "valid": 0
+   }
+  },
+  {
+   "a": "D",
+   "da": "C'",
+   "esiti": {
+    "adaptable": 0,
+    "incompatible": 6,
+    "invalid": 0,
+    "tampered": 0,
+    "valid": 0
+   }
+  }
+ ],
+ "esperimento": "MVP-4",
+ "fonte": {
+  "codice": "cultural_ratchet/aud/rete.py",
+  "file": "results/aud/mvp4.json",
+  "sha256": "52179d8e9ae368640bf32fbc27ba3d1d82c069fc9c987bacd0e8d8fadba6869a"
+ },
+ "gate": {
+  "accettati": 61,
+  "falsi_con_contratto": 11,
+  "falsi_senza_contratto": 687,
+  "istanze": 60,
+  "manomessi": 189,
+  "manomessi_rilevati": 189,
+  "provenienza_ok": 61,
+  "superato": true
+ },
+ "istanze": [
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4000
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4001
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4002
+  },
+  {
+   "falsi_accettati": 1,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4003
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4004
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4005
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4006
+  },
+  {
+   "falsi_accettati": 1,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4007
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4008
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4009
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4010
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C'",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4011
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4012
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4013
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4014
+  },
+  {
+   "falsi_accettati": 1,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4015
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4016
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4017
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4018
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4019
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4020
+  },
+  {
+   "falsi_accettati": 1,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C'",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4021
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4022
+  },
+  {
+   "falsi_accettati": 3,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4023
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4024
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4025
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4026
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4027
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4028
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4029
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 10,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4030
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4031
+  },
+  {
+   "falsi_accettati": 1,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4032
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4033
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4034
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4035
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4036
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4037
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4038
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4039
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4040
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4041
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 10,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4042
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4043
+  },
+  {
+   "falsi_accettati": 1,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C'",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4044
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4045
+  },
+  {
+   "falsi_accettati": 1,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C'",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4046
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4047
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4048
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4049
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4050
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4051
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4052
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4053
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4054
+  },
+  {
+   "falsi_accettati": 1,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C'",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4055
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 10,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C'",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4056
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 12,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4057
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 11,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    }
+   ],
+   "seme": 4058
+  },
+  {
+   "falsi_accettati": 0,
+   "falsi_senza_contratto": 10,
+   "messaggi": [
+    {
+     "a": "A'",
+     "da": "A",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "A'",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "B'",
+     "da": "A",
+     "esito": "adaptable",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "A",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "A",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "B",
+     "esito": "valid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "B'",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 2
+    },
+    {
+     "a": "C'",
+     "da": "B",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "B",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "A'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "B'",
+     "da": "C",
+     "esito": "invalid",
+     "manomesso": false,
+     "salto": 1
+    },
+    {
+     "a": "C'",
+     "da": "C",
+     "esito": "tampered",
+     "manomesso": true,
+     "salto": 1
+    },
+    {
+     "a": "D",
+     "da": "C",
+     "esito": "incompatible",
+     "manomesso": false,
+     "salto": 1
+    }
+   ],
+   "seme": 4059
+  }
+ ],
+ "schema": "kosmai-scambi/1",
+ "universi": [
+  {
+   "descrizione": "Famiglia di regole A: scopre e pubblica.",
+   "id": "A",
+   "regole": "A",
+   "ruolo": "mittente"
+  },
+  {
+   "descrizione": "Famiglia di regole B: scopre e pubblica.",
+   "id": "B",
+   "regole": "B",
+   "ruolo": "mittente"
+  },
+  {
+   "descrizione": "Famiglia di regole C: scopre e pubblica.",
+   "id": "C",
+   "regole": "C",
+   "ruolo": "mittente"
+  },
+  {
+   "descrizione": "Stesse regole di A, altro seme.",
+   "id": "A'",
+   "regole": "A",
+   "ruolo": "destinatario"
+  },
+  {
+   "descrizione": "Stesse regole di B, altro seme.",
+   "id": "B'",
+   "regole": "B",
+   "ruolo": "destinatario"
+  },
+  {
+   "descrizione": "Stesse regole di C, altro seme.",
+   "id": "C'",
+   "regole": "C",
+   "ruolo": "destinatario"
+  },
+  {
+   "descrizione": "Regole di A ma senza termometro: non può ricavare i ranghi, quindi non può usare una legge.",
+   "id": "D",
+   "regole": "A",
+   "ruolo": "destinatario"
+  }
+ ]
+}
