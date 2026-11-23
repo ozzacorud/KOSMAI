@@ -58,3 +58,7 @@ svg { display: block; width: 100%; height: auto; }
   .scena { min-height: 0; }
   .link-esperimento { width: 100%; }
 }
+.filo-vero { stroke-dasharray: 6 10; animation: scorre 2.2s linear infinite; }
+.nodo-rete { cursor: default; }
+.pallino { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: -1px; }
+@media (prefers-reduced-motion: reduce) { .filo-vero { animation: none; } }
