@@ -5,7 +5,7 @@
   "use strict";
   const NS = "http://www.w3.org/2000/svg";
   const $ = (id) => document.getElementById(id);
-  const stato = { galassie: null, evo: {}, pianeti: {}, rete: null, istanza: 1, galassia: null, seme: null, gen: 1, timer: null };
+  const stato = { galassie: null, evo: {}, conoscenza: {}, pianeti: {}, rete: null, istanza: 1, galassia: null, seme: null, gen: 1, timer: null };
 
   const prendi = (url) => fetch(url).then((r) => {
     if (!r.ok) throw new Error(url + ": " + r.status);
@@ -256,7 +256,7 @@
     $("pannelli").innerHTML = `
       <div class="pannello"><h2>Cosa crede la generazione ${g.gen}</h2><pre>${esc(gl.teoria.testo.replace(/^TEORIA\n/, ""))}</pre>
         <div class="riga"><span>Previsioni giuste</span><span>${Math.round(g.accuratezza * 100)}%</span></div>
-        <div class="riga"><span>Tipo di teoria</span><span>${g.tipo === "law" ? "formula" : "elenco (tabella)"}</span></div></div>
+        <div class="riga"><span>Tipo di teoria</span><span>${g.tipo === "law" ? "formula" : "elenco (tabella)"}</span></div>${statoEpistemico(p, g)}</div>
       <div class="pannello"><h2>Cosa riceve in eredità</h2>
         <div class="riga"><span>Reazioni osservate</span><span>${e.reazioni}</span></div>
         <div class="riga"><span>Calori misurati</span><span>${e.calori}</span></div>
@@ -266,6 +266,20 @@
         <div class="riga"><span>Lettore solo (160 chiamate, nessuna eredità)</span><span>${ind.finale.legge_verificata ? "legge trovata" : "nessuna legge"}</span></div></div>
       <div class="pannello"><h2>Diario</h2><ul class="diario">${diario}</ul></div>`;
     aggiornaBarra();
+  }
+
+  // Stato epistemico (contratto kosmai-conoscenza/1): solo dalla generazione della scoperta in poi.
+  const SPIEGA = {
+    proposed: "proposta da un agente", simulated: "verificata dal codice del mondo",
+    internally_reproduced: "ritrovata su altri semi pre-registrati", generalized: "predice anche l'elemento mai osservato",
+    externally_compatible: "compatibile con un modello del nostro universo", experimentally_validated: "confermata da un esperimento esterno",
+  };
+  function statoEpistemico(p, g) {
+    const k = (stato.conoscenza[stato.galassia]?.conoscenze || []).find((x) => x.knowledge_id.split("/")[1] === String(p.seme));
+    if (!k || !p.scoperta_gen || g.gen < p.scoperta_gen) return "";
+    const passi = k.storia.map((h) => `<li>${esc(SPIEGA[h.stato] || h.stato)}</li>`).join("");
+    return `<h2 style="margin-top:12px">Stato della conoscenza: <span style="color:var(--oro)">${esc(k.epistemic_status)}</span></h2>
+      <ol class="passi">${passi}</ol><p style="margin:0;font-size:13px;color:var(--tenue)">Non ancora confrontata con il nostro universo.</p>`;
   }
 
   // Diario: eventi del registro + passaggi letti da evoluzione (prima regola giusta, inizio e fine di uno stallo).
@@ -329,6 +343,7 @@
     const g = stato.galassie.galassie.find((x) => x.id === galassia);
     if (!g || g.stato !== "esplorabile") { stato.galassia = null; return livello1(); }
     if (!stato.evo[galassia]) stato.evo[galassia] = await prendi(g.dati);
+    if (g.conoscenza && !stato.conoscenza[galassia]) stato.conoscenza[galassia] = await prendi(g.conoscenza).catch(() => ({ conoscenze: [] }));
     if (seme && !stato.evo[galassia].pianeti.some((p) => p.seme === seme)) stato.seme = null;
     scriviHash();
     window.scrollTo({ top: 0 });

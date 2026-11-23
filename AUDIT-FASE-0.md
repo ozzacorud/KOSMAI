@@ -73,3 +73,10 @@ casuali. Quei dati si possono esportare e disegnare come bagliori veri a costo z
    si passano conoscenza fra mondi con regole diverse). Stima da fare con una pre-registrazione, ordine di grandezza
    della conferma (circa 19M token).
 5. **Più avanti:** un primo dominio fisico o chimico reale con unità e benchmark noti, per il Reality Bridge.
+
+## Aggiornamento 23/11 pomeriggio
+
+- Passo 2 fatto: contratto della conoscenza `kosmai-conoscenza/1` (`cultural_ratchet/kosmai_conoscenza.py`), 8 stati,
+  transizioni un passo alla volta con evidenza del tipo richiesto, verificatore diverso dal proponente, sigillo sha256.
+  Le 4 scoperte della conferma arrivano a `generalized`, nessuna oltre.
+- Passo 3 fatto: Universo B (`UNIVERSO-B.md`), tutte e tre le previsioni confermate.

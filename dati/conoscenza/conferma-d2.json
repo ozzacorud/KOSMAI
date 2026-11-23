@@ -1,0 +1,459 @@
+{
+ "conoscenze": [
+  {
+   "claim": "Nel mondo calibrato D2 la valenza degli elementi segue una legge periodica dei ranghi di massa, e con la regola di reazione predice tutte le reazioni, anche dell'elemento mai osservato.",
+   "conditions": {
+    "elementi": 8,
+    "energie": "1-5",
+    "mondo": "calibrato D2",
+    "ranghi": "dal calore misurato",
+    "valenze": "1-5"
+   },
+   "epistemic_status": "generalized",
+   "evidence_refs": [
+    "conferma-d2/pianeta-331.json#linea.generazioni[23]",
+    "conferma-d2/universo.json#esito"
+   ],
+   "formal_relation": "valenza = (((r + r) mod (2 + 3)) + 1)\ncondizione = (((a + b) div 3) mod 2)\nattivazione = ((a * b) - 1)",
+   "hash": "2e6cac99ee32668da7e0023dd4f793c4ae7a9a9440b549c7f3dbba9168d2c29b",
+   "knowledge_id": "conferma-d2/331/legge-valenza",
+   "method": "catena di 40 generazioni x 4 agenti con eredità; scoperta alla generazione 24",
+   "model_version": "MondoCalibrato D2, claude-sonnet-5-5",
+   "prediction": {
+    "condizione_non_vista": "elemento escluso dagli esperimenti (rango 7)",
+    "mendeleev": 1.0
+   },
+   "provenance": {
+    "agenti": "generazione 24, pianeta 331",
+    "proponente": "agenti/conferma-d2/331/gen-24",
+    "registro": "results/conferma (sha256 in conferma-d2/universo.json#fonti)"
+   },
+   "schema": "kosmai-conoscenza/1",
+   "storia": [
+    {
+     "da": null,
+     "evidenza": null,
+     "precedente": null,
+     "stato": "proposed",
+     "verificatore": null
+    },
+    {
+     "da": "proposed",
+     "evidenza": {
+      "nota": "law_ok calcolato dal codice del mondo",
+      "rif": [
+       "conferma-d2/pianeta-331.json#linea.generazioni[23].teoria.legge_verificata"
+      ],
+      "tipo": "verifica_nel_modello"
+     },
+     "precedente": "29e84bdec97160658e6673352af26eb01f7c57358789c379a67d3a1145714a20",
+     "stato": "simulated",
+     "verificatore": "codice/MondoCalibrato.law_ok"
+    },
+    {
+     "da": "simulated",
+     "evidenza": {
+      "nota": "la stessa legge emerge in 3 altri semi indipendenti, pre-registrati (sha256 daff9b199d10)",
+      "rif": [
+       "conferma-d2/pianeta-333.json#linea.scoperta_gen",
+       "conferma-d2/pianeta-334.json#linea.scoperta_gen",
+       "conferma-d2/pianeta-335.json#linea.scoperta_gen",
+       "preregistrazione-conferma.json"
+      ],
+      "tipo": "replica_preregistrata"
+     },
+     "precedente": "7c156110011e2b0174701c6b90881c25464eaf6a8fb755756601d501b78ccfaf",
+     "stato": "internally_reproduced",
+     "verificatore": "analisi/conferma.r2e"
+    },
+    {
+     "da": "internally_reproduced",
+     "evidenza": {
+      "nota": "predice le reazioni dell'elemento mai osservato (mendeleev 1,0)",
+      "rif": [
+       "conferma-d2/pianeta-331.json#linea.generazioni[23].teoria.mendeleev"
+      ],
+      "tipo": "previsione_held_out"
+     },
+     "precedente": "89e8d099cbed86575a6d9811c37f8fda251af55aa8e6b2d606e0e516af481da0",
+     "stato": "generalized",
+     "verificatore": "codice/open_world.evaluate"
+    }
+   ],
+   "transfer_requirements": [
+    "ranghi dal calore (termometro)",
+    "stessa regola di reazione",
+    "rivalutazione nel mondo ricevente (mai trasferita come vera)"
+   ],
+   "uncertainty": {
+    "limiti": [
+     "Un solo mondo (livello D2) e un solo modello (Sonnet 5.5).",
+     "Il verde arriva dopo una cascata di esperimenti; la conferma però era pre-registrata su semi mai usati.",
+     "Il mondo è testuale: gli agenti non hanno una posizione. Anelli e stelle rappresentano generazioni e agenti, non uno spazio fisico.",
+     "Il seme 333 è escluso da R2e per una chiamata persa al limite settimanale e poi rifatta."
+    ],
+    "semi_con_scoperta": "4 su 6"
+   },
+   "universe_id": "conferma-d2/seme-331",
+   "variables": {
+    "dipendenti": [
+     "valenza",
+     "reazione sì/no"
+    ],
+    "indipendenti": [
+     "r (rango di massa)",
+     "a, b (valenze)",
+     "energia"
+    ],
+    "unita": "nessuna: mondo a interi"
+   },
+   "verification": {
+    "codice_del_mondo": true,
+    "preregistrazione": "preregistrazione-conferma.json",
+    "sha256_preregistrazione": "daff9b199d10e043f9556aad1853bd2f6bfd0713282a814b8c09d797df8e3a98"
+   }
+  },
+  {
+   "claim": "Nel mondo calibrato D2 la valenza degli elementi segue una legge periodica dei ranghi di massa, e con la regola di reazione predice tutte le reazioni, anche dell'elemento mai osservato.",
+   "conditions": {
+    "elementi": 8,
+    "energie": "1-5",
+    "mondo": "calibrato D2",
+    "ranghi": "dal calore misurato",
+    "valenze": "1-5"
+   },
+   "epistemic_status": "generalized",
+   "evidence_refs": [
+    "conferma-d2/pianeta-333.json#linea.generazioni[28]",
+    "conferma-d2/universo.json#esito"
+   ],
+   "formal_relation": "valenza = (((2 * r) mod (3 + 2)) + 1)\ncondizione = (((a + b) + 2) mod (3 + 1))\nattivazione = ((a * b) - 1)",
+   "hash": "590ef41a6a744838755aa87bdef0470e7425579c8290a6a43be46268be96064a",
+   "knowledge_id": "conferma-d2/333/legge-valenza",
+   "method": "catena di 40 generazioni x 4 agenti con eredità; scoperta alla generazione 29",
+   "model_version": "MondoCalibrato D2, claude-sonnet-5-5",
+   "prediction": {
+    "condizione_non_vista": "elemento escluso dagli esperimenti (rango 7)",
+    "mendeleev": 1.0
+   },
+   "provenance": {
+    "agenti": "generazione 29, pianeta 333",
+    "proponente": "agenti/conferma-d2/333/gen-29",
+    "registro": "results/conferma (sha256 in conferma-d2/universo.json#fonti)"
+   },
+   "schema": "kosmai-conoscenza/1",
+   "storia": [
+    {
+     "da": null,
+     "evidenza": null,
+     "precedente": null,
+     "stato": "proposed",
+     "verificatore": null
+    },
+    {
+     "da": "proposed",
+     "evidenza": {
+      "nota": "law_ok calcolato dal codice del mondo",
+      "rif": [
+       "conferma-d2/pianeta-333.json#linea.generazioni[28].teoria.legge_verificata"
+      ],
+      "tipo": "verifica_nel_modello"
+     },
+     "precedente": "da09f7d8a4e32b09b79b32aedc7f04492420b6d14a1aca6f0da2db0c29210c3f",
+     "stato": "simulated",
+     "verificatore": "codice/MondoCalibrato.law_ok"
+    },
+    {
+     "da": "simulated",
+     "evidenza": {
+      "nota": "la stessa legge emerge in 3 altri semi indipendenti, pre-registrati (sha256 daff9b199d10)",
+      "rif": [
+       "conferma-d2/pianeta-331.json#linea.scoperta_gen",
+       "conferma-d2/pianeta-334.json#linea.scoperta_gen",
+       "conferma-d2/pianeta-335.json#linea.scoperta_gen",
+       "preregistrazione-conferma.json"
+      ],
+      "tipo": "replica_preregistrata"
+     },
+     "precedente": "5fce053d3c2e601976cbd2405b798135cf515f25d7108e1ec735ee5f30c4fb10",
+     "stato": "internally_reproduced",
+     "verificatore": "analisi/conferma.r2e"
+    },
+    {
+     "da": "internally_reproduced",
+     "evidenza": {
+      "nota": "predice le reazioni dell'elemento mai osservato (mendeleev 1,0)",
+      "rif": [
+       "conferma-d2/pianeta-333.json#linea.generazioni[28].teoria.mendeleev"
+      ],
+      "tipo": "previsione_held_out"
+     },
+     "precedente": "ec0a9c8879459ea88527bc60d519940fb5777cbf07ed458ffdf5bd3e70285001",
+     "stato": "generalized",
+     "verificatore": "codice/open_world.evaluate"
+    }
+   ],
+   "transfer_requirements": [
+    "ranghi dal calore (termometro)",
+    "stessa regola di reazione",
+    "rivalutazione nel mondo ricevente (mai trasferita come vera)"
+   ],
+   "uncertainty": {
+    "limiti": [
+     "Un solo mondo (livello D2) e un solo modello (Sonnet 5.5).",
+     "Il verde arriva dopo una cascata di esperimenti; la conferma però era pre-registrata su semi mai usati.",
+     "Il mondo è testuale: gli agenti non hanno una posizione. Anelli e stelle rappresentano generazioni e agenti, non uno spazio fisico.",
+     "Il seme 333 è escluso da R2e per una chiamata persa al limite settimanale e poi rifatta."
+    ],
+    "semi_con_scoperta": "4 su 6"
+   },
+   "universe_id": "conferma-d2/seme-333",
+   "variables": {
+    "dipendenti": [
+     "valenza",
+     "reazione sì/no"
+    ],
+    "indipendenti": [
+     "r (rango di massa)",
+     "a, b (valenze)",
+     "energia"
+    ],
+    "unita": "nessuna: mondo a interi"
+   },
+   "verification": {
+    "codice_del_mondo": true,
+    "preregistrazione": "preregistrazione-conferma.json",
+    "sha256_preregistrazione": "daff9b199d10e043f9556aad1853bd2f6bfd0713282a814b8c09d797df8e3a98"
+   }
+  },
+  {
+   "claim": "Nel mondo calibrato D2 la valenza degli elementi segue una legge periodica dei ranghi di massa, e con la regola di reazione predice tutte le reazioni, anche dell'elemento mai osservato.",
+   "conditions": {
+    "elementi": 8,
+    "energie": "1-5",
+    "mondo": "calibrato D2",
+    "ranghi": "dal calore misurato",
+    "valenze": "1-5"
+   },
+   "epistemic_status": "generalized",
+   "evidence_refs": [
+    "conferma-d2/pianeta-334.json#linea.generazioni[22]",
+    "conferma-d2/universo.json#esito"
+   ],
+   "formal_relation": "valenza = (((r + r) mod (2 + 3)) + 1)\ncondizione = (((a + b) div 3) mod 2)\nattivazione = ((a * b) - 1)",
+   "hash": "8ad3f9277c936d837e1948dd170ea8397c52c11191b1bf4322acada33b18c1ac",
+   "knowledge_id": "conferma-d2/334/legge-valenza",
+   "method": "catena di 40 generazioni x 4 agenti con eredità; scoperta alla generazione 23",
+   "model_version": "MondoCalibrato D2, claude-sonnet-5-5",
+   "prediction": {
+    "condizione_non_vista": "elemento escluso dagli esperimenti (rango 7)",
+    "mendeleev": 1.0
+   },
+   "provenance": {
+    "agenti": "generazione 23, pianeta 334",
+    "proponente": "agenti/conferma-d2/334/gen-23",
+    "registro": "results/conferma (sha256 in conferma-d2/universo.json#fonti)"
+   },
+   "schema": "kosmai-conoscenza/1",
+   "storia": [
+    {
+     "da": null,
+     "evidenza": null,
+     "precedente": null,
+     "stato": "proposed",
+     "verificatore": null
+    },
+    {
+     "da": "proposed",
+     "evidenza": {
+      "nota": "law_ok calcolato dal codice del mondo",
+      "rif": [
+       "conferma-d2/pianeta-334.json#linea.generazioni[22].teoria.legge_verificata"
+      ],
+      "tipo": "verifica_nel_modello"
+     },
+     "precedente": "0dedd04ad9ddd8332821a826567d5acb4b2765c56399c15b21a9d8cc2e464d64",
+     "stato": "simulated",
+     "verificatore": "codice/MondoCalibrato.law_ok"
+    },
+    {
+     "da": "simulated",
+     "evidenza": {
+      "nota": "la stessa legge emerge in 3 altri semi indipendenti, pre-registrati (sha256 daff9b199d10)",
+      "rif": [
+       "conferma-d2/pianeta-331.json#linea.scoperta_gen",
+       "conferma-d2/pianeta-333.json#linea.scoperta_gen",
+       "conferma-d2/pianeta-335.json#linea.scoperta_gen",
+       "preregistrazione-conferma.json"
+      ],
+      "tipo": "replica_preregistrata"
+     },
+     "precedente": "fd8feb75a32fe0dba4987746c6edb74be86ee1615c121ef01e28f0c06fb92d5c",
+     "stato": "internally_reproduced",
+     "verificatore": "analisi/conferma.r2e"
+    },
+    {
+     "da": "internally_reproduced",
+     "evidenza": {
+      "nota": "predice le reazioni dell'elemento mai osservato (mendeleev 1,0)",
+      "rif": [
+       "conferma-d2/pianeta-334.json#linea.generazioni[22].teoria.mendeleev"
+      ],
+      "tipo": "previsione_held_out"
+     },
+     "precedente": "301e1f092fa588b00c8836dee6abce879079bf8bf776ae6aae1ef8abe5cfca61",
+     "stato": "generalized",
+     "verificatore": "codice/open_world.evaluate"
+    }
+   ],
+   "transfer_requirements": [
+    "ranghi dal calore (termometro)",
+    "stessa regola di reazione",
+    "rivalutazione nel mondo ricevente (mai trasferita come vera)"
+   ],
+   "uncertainty": {
+    "limiti": [
+     "Un solo mondo (livello D2) e un solo modello (Sonnet 5.5).",
+     "Il verde arriva dopo una cascata di esperimenti; la conferma però era pre-registrata su semi mai usati.",
+     "Il mondo è testuale: gli agenti non hanno una posizione. Anelli e stelle rappresentano generazioni e agenti, non uno spazio fisico.",
+     "Il seme 333 è escluso da R2e per una chiamata persa al limite settimanale e poi rifatta."
+    ],
+    "semi_con_scoperta": "4 su 6"
+   },
+   "universe_id": "conferma-d2/seme-334",
+   "variables": {
+    "dipendenti": [
+     "valenza",
+     "reazione sì/no"
+    ],
+    "indipendenti": [
+     "r (rango di massa)",
+     "a, b (valenze)",
+     "energia"
+    ],
+    "unita": "nessuna: mondo a interi"
+   },
+   "verification": {
+    "codice_del_mondo": true,
+    "preregistrazione": "preregistrazione-conferma.json",
+    "sha256_preregistrazione": "daff9b199d10e043f9556aad1853bd2f6bfd0713282a814b8c09d797df8e3a98"
+   }
+  },
+  {
+   "claim": "Nel mondo calibrato D2 la valenza degli elementi segue una legge periodica dei ranghi di massa, e con la regola di reazione predice tutte le reazioni, anche dell'elemento mai osservato.",
+   "conditions": {
+    "elementi": 8,
+    "energie": "1-5",
+    "mondo": "calibrato D2",
+    "ranghi": "dal calore misurato",
+    "valenze": "1-5"
+   },
+   "epistemic_status": "generalized",
+   "evidence_refs": [
+    "conferma-d2/pianeta-335.json#linea.generazioni[14]",
+    "conferma-d2/universo.json#esito"
+   ],
+   "formal_relation": "valenza = (((r * 2) mod (3 + 2)) + 1)\ncondizione = (((a + b) div 3) mod 2)\nattivazione = ((a * b) - 1)",
+   "hash": "f25778a8d9e42c5c3395b9b621af341352ba5ed70e41b8f2e315c961dd2b27bc",
+   "knowledge_id": "conferma-d2/335/legge-valenza",
+   "method": "catena di 40 generazioni x 4 agenti con eredità; scoperta alla generazione 15",
+   "model_version": "MondoCalibrato D2, claude-sonnet-5-5",
+   "prediction": {
+    "condizione_non_vista": "elemento escluso dagli esperimenti (rango 7)",
+    "mendeleev": 1.0
+   },
+   "provenance": {
+    "agenti": "generazione 15, pianeta 335",
+    "proponente": "agenti/conferma-d2/335/gen-15",
+    "registro": "results/conferma (sha256 in conferma-d2/universo.json#fonti)"
+   },
+   "schema": "kosmai-conoscenza/1",
+   "storia": [
+    {
+     "da": null,
+     "evidenza": null,
+     "precedente": null,
+     "stato": "proposed",
+     "verificatore": null
+    },
+    {
+     "da": "proposed",
+     "evidenza": {
+      "nota": "law_ok calcolato dal codice del mondo",
+      "rif": [
+       "conferma-d2/pianeta-335.json#linea.generazioni[14].teoria.legge_verificata"
+      ],
+      "tipo": "verifica_nel_modello"
+     },
+     "precedente": "74ff3041e08be3cdc89877ba917005513eabf3cf7b35dfc84d88f523f357a0ff",
+     "stato": "simulated",
+     "verificatore": "codice/MondoCalibrato.law_ok"
+    },
+    {
+     "da": "simulated",
+     "evidenza": {
+      "nota": "la stessa legge emerge in 3 altri semi indipendenti, pre-registrati (sha256 daff9b199d10)",
+      "rif": [
+       "conferma-d2/pianeta-331.json#linea.scoperta_gen",
+       "conferma-d2/pianeta-333.json#linea.scoperta_gen",
+       "conferma-d2/pianeta-334.json#linea.scoperta_gen",
+       "preregistrazione-conferma.json"
+      ],
+      "tipo": "replica_preregistrata"
+     },
+     "precedente": "1934a1fcd3a9fed46bee43295918a4c74773ac697fff6ee88474d42e82bd5612",
+     "stato": "internally_reproduced",
+     "verificatore": "analisi/conferma.r2e"
+    },
+    {
+     "da": "internally_reproduced",
+     "evidenza": {
+      "nota": "predice le reazioni dell'elemento mai osservato (mendeleev 1,0)",
+      "rif": [
+       "conferma-d2/pianeta-335.json#linea.generazioni[14].teoria.mendeleev"
+      ],
+      "tipo": "previsione_held_out"
+     },
+     "precedente": "5632fdc6d5ea5d3213e38c8e06622ebceb0a62c89e5b7a61c050e357c573a8c4",
+     "stato": "generalized",
+     "verificatore": "codice/open_world.evaluate"
+    }
+   ],
+   "transfer_requirements": [
+    "ranghi dal calore (termometro)",
+    "stessa regola di reazione",
+    "rivalutazione nel mondo ricevente (mai trasferita come vera)"
+   ],
+   "uncertainty": {
+    "limiti": [
+     "Un solo mondo (livello D2) e un solo modello (Sonnet 5.5).",
+     "Il verde arriva dopo una cascata di esperimenti; la conferma però era pre-registrata su semi mai usati.",
+     "Il mondo è testuale: gli agenti non hanno una posizione. Anelli e stelle rappresentano generazioni e agenti, non uno spazio fisico.",
+     "Il seme 333 è escluso da R2e per una chiamata persa al limite settimanale e poi rifatta."
+    ],
+    "semi_con_scoperta": "4 su 6"
+   },
+   "universe_id": "conferma-d2/seme-335",
+   "variables": {
+    "dipendenti": [
+     "valenza",
+     "reazione sì/no"
+    ],
+    "indipendenti": [
+     "r (rango di massa)",
+     "a, b (valenze)",
+     "energia"
+    ],
+    "unita": "nessuna: mondo a interi"
+   },
+   "verification": {
+    "codice_del_mondo": true,
+    "preregistrazione": "preregistrazione-conferma.json",
+    "sha256_preregistrazione": "daff9b199d10e043f9556aad1853bd2f6bfd0713282a814b8c09d797df8e3a98"
+   }
+  }
+ ],
+ "nota": "Nessun oggetto supera generalized: non c'è ancora un confronto con il nostro universo.",
+ "schema": "kosmai-conoscenza/1",
+ "universo": "conferma-d2"
+}
