@@ -1,6 +1,6 @@
 {
  "schema": "kosmai-galassie/1",
- "nota": "Ogni galassia è un universo: un esperimento con le sue regole. Solo le galassie con stato 'esplorabile' hanno i dati esportati per il sito; le altre hanno i dati grezzi nel repo ma non ancora esportati. 'futura' non esiste ancora. La rete di scambio (MVP-4) è disegnata con dati veri; gli scambi fra le galassie delle civiltà AI restano futuri.",
+ "nota": "Ogni galassia è un universo: un esperimento con le sue regole. Solo le galassie 'esplorabile' hanno i dati esportati per il sito; 'da esportare' ha i dati grezzi nel repo; 'futura' non esiste ancora. Sono veri la rete di scambio MVP-4 (agenti casuali) e lo scambio Conferma → Universo B fatto da civiltà di Sonnet (23/11); gli altri fili sono futuri.",
  "galassie": [
   {
    "id": "conferma-d2",
@@ -24,8 +24,8 @@
    "stato": "da esportare",
    "fonte": "results/calibrato-replica",
    "descrizione": "12 civiltà da 20 generazioni (semi 319-330).",
-   "x": 0.52,
-   "y": 0.24,
+   "x": 0.46,
+   "y": 0.13,
    "colore": "#8f7bff"
   },
   {
@@ -39,6 +39,19 @@
    "x": 0.47,
    "y": 0.68,
    "colore": "#5aa0ff"
+  },
+  {
+   "id": "universo-b",
+   "nome": "Universo B",
+   "livello": "B3",
+   "pianeti": 4,
+   "stato": "scambio",
+   "fonte": "results/scambio-llm",
+   "descrizione": "Una sola regola cambiata: valenza 1 + (3r mod 5). 4 civiltà di Sonnet ricevono la legge della Conferma con un contratto.",
+   "esito": "Con la legge ricevuta le civiltà di B trovano la propria legge 12 volte su 12; con un messaggio uguale ma una legge a caso 2 su 12. Nessuna si tiene la legge di A sbagliata: la adattano. Pre-registrato, circa 2 milioni di token.",
+   "x": 0.63,
+   "y": 0.5,
+   "colore": "#3ecf8e"
   },
   {
    "id": "nostro-universo",
@@ -70,8 +83,10 @@
   },
   {
    "da": "conferma-d2",
-   "a": "calibrato-replica",
-   "stato": "futuro"
+   "a": "universo-b",
+   "stato": "vero",
+   "esito": "Scambio vero fatto dalle AI: legge trovata 12/12 con il dono, 2/12 con il placebo",
+   "dati": "dati/scambi/scambio-llm.json"
   }
  ],
  "rete": {
