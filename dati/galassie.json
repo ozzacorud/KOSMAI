@@ -1,0 +1,25 @@
+{
+ "schema": "kosmai-galassie/1",
+ "nota": "Ogni galassia è un universo: un esperimento con le sue regole. Solo le galassie con stato 'esplorabile' hanno i dati esportati per il sito; le altre hanno i dati grezzi nel repo ma non ancora esportati. 'futura' non esiste ancora.",
+ "galassie": [
+  {"id": "conferma-d2", "nome": "Conferma", "livello": "D2", "pianeti": 6, "stato": "esplorabile",
+   "dati": "dati/evoluzione/conferma-d2.json", "universo": "dati/conferma-d2/universo.json",
+   "descrizione": "6 civiltà, 40 generazioni ciascuna, stessa legge nascosta. Esperimento pre-registrato.",
+   "x": 0.22, "y": 0.42, "colore": "#f2c14e"},
+  {"id": "calibrato-replica", "nome": "Replica", "livello": "D2", "pianeti": 12, "stato": "da esportare",
+   "fonte": "results/calibrato-replica", "descrizione": "12 civiltà da 20 generazioni (semi 319-330).",
+   "x": 0.52, "y": 0.24, "colore": "#8f7bff"},
+  {"id": "estensione-40", "nome": "Estensione", "livello": "D2", "pianeti": 4, "stato": "da esportare",
+   "fonte": "results/estensione-40", "descrizione": "4 civiltà portate a 40 generazioni (semi 315-318).",
+   "x": 0.47, "y": 0.68, "colore": "#5aa0ff"},
+  {"id": "nostro-universo", "nome": "Il nostro universo", "livello": null, "pianeti": 0, "stato": "futura",
+   "descrizione": "Un universo con le nostre regole che impara dagli altri e propone ipotesi. Serve un esperimento nuovo.",
+   "x": 0.78, "y": 0.5, "colore": "#9aa0b8"}
+ ],
+ "scambi": [
+  {"da": "conferma-d2", "a": "nostro-universo", "stato": "futuro"},
+  {"da": "calibrato-replica", "a": "nostro-universo", "stato": "futuro"},
+  {"da": "estensione-40", "a": "nostro-universo", "stato": "futuro"},
+  {"da": "conferma-d2", "a": "calibrato-replica", "stato": "futuro"}
+ ]
+}

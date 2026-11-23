@@ -3,72 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KosmAI — La catena contro il lettore solo</title>
-<meta name="description" content="Generazioni di agenti AI scoprono una legge nascosta che un lettore solo, con lo stesso budget, non trova. Esperimento pre-registrato, dati scaricabili.">
-<link rel="stylesheet" href="sito/stile.css">
+<title>KosmAI — Universi che si evolvono</title>
+<meta name="description" content="Galassie di universi, pianeti abitati da civiltà di agenti AI che si passano la conoscenza di generazione in generazione. Ogni dettaglio è un dato reale.">
+<link rel="stylesheet" href="sito/universi.css">
 </head>
 <body>
-<header class="testa">
-  <p class="marchio">KosmAI</p>
-  <h1 id="titolo">La catena contro il lettore solo</h1>
-  <p id="domanda" class="domanda"></p>
-  <p id="esito" class="esito"></p>
+<header class="barra-alta">
+  <a class="marchio" href="./">KosmAI</a>
+  <nav id="briciole" class="briciole" aria-label="Dove sei"></nav>
+  <a class="link-esperimento" href="esperimento.html">L'esperimento e i numeri</a>
 </header>
 
-<main>
-  <nav class="pianeti" aria-label="Pianeti (semi dell'esperimento)">
-    <span class="etichetta">Pianeti</span>
-    <div id="scelta-pianeta" class="chips"></div>
-  </nav>
-
-  <section class="binario" aria-label="La catena e il lettore solo, affiancati">
-    <figure class="pannello">
-      <figcaption><strong>La catena</strong> · <span id="sotto-catena"></span></figcaption>
-      <svg id="costellazione" viewBox="-330 -330 660 660" role="img" aria-label="Costellazione della catena"></svg>
-    </figure>
-    <figure class="pannello">
-      <figcaption><strong>Il lettore solo</strong> · <span id="sotto-lettore"></span></figcaption>
-      <svg id="lettore" viewBox="-330 -330 660 660" role="img" aria-label="Il lettore solo"></svg>
-    </figure>
-  </section>
-
-  <section class="tempo" aria-label="Barra temporale">
-    <button id="play" type="button" aria-label="Riproduci">▶</button>
-    <input id="barra" type="range" min="0" max="1" value="0" aria-label="Generazione">
-    <output id="gen-attuale" for="barra"></output>
-  </section>
-
-  <section class="due-colonne">
-    <div>
-      <h2>Cronaca</h2>
-      <ol id="cronaca" class="cronaca"></ol>
-    </div>
-    <div>
-      <h2>Dettaglio</h2>
-      <div id="dettaglio" class="dettaglio"><p class="tenue">Tocca una stella per leggere cosa ha fatto quell'agente.</p></div>
-    </div>
-  </section>
-
-  <section id="prova-eredita" class="prova">
-    <h2>La prova dell'eredità</h2>
-    <p class="tenue" id="prova-testo"></p>
-    <div id="prova-griglia" class="prova-griglia"></div>
-  </section>
-
-  <section class="scheda">
-    <h2>Scheda dell'esperimento</h2>
-    <dl id="scheda"></dl>
-    <h3>Limiti</h3>
-    <ul id="limiti"></ul>
-    <h3>Dati</h3>
-    <p>Ogni elemento di questa pagina viene da questi file, identici a quelli usati dal sito:</p>
-    <ul id="download"></ul>
-  </section>
+<main id="scena" class="scena" aria-live="polite">
+  <svg id="cielo" class="cielo" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Spazio profondo"></svg>
+  <section id="livello" class="livello"></section>
 </main>
 
-<footer class="piede">
-  <p>Ogni stella è un agente, ogni anello una generazione, ogni linea un'eredità. Niente è inventato per l'effetto: se non è nei dati, non è sulla pagina.</p>
+<section id="comandi" class="comandi" hidden>
+  <button id="play" type="button" aria-label="Riproduci">▶</button>
+  <input id="barra" type="range" min="1" max="40" value="1" aria-label="Generazione">
+  <output id="gen" for="barra"></output>
+</section>
+
+<section id="pannelli" class="pannelli" hidden></section>
+
+<footer class="legenda" id="legenda">
+  <span><i class="l-reg"></i>regione accesa: elemento capito</span>
+  <span><i class="l-buio"></i>regione buia: valenza diversa da quella vera</span>
+  <span><i class="l-luna"></i>luna: prevede l'elemento mai visto</span>
+  <span><i class="l-atm"></i>atmosfera: reazioni ereditate</span>
+  <span><i class="l-anello"></i>anelli: regola delle reazioni, tabella esatta</span>
+  <span><i class="l-oro"></i>anello d'oro: legge scoperta</span>
+  <span><i class="l-fermo"></i>grigio: fermo da 5 generazioni</span>
 </footer>
-<script src="sito/app.js"></script>
+<script src="sito/universi.js"></script>
 </body>
 </html>
