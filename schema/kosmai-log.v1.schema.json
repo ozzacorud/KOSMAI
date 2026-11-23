@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kosmai-log/1",
+  "title": "KosmAI log v1",
+  "description": "Formato dei dati del sito KosmAI. universo.json usa #/$defs/universo, pianeta-<seme>.json usa #/$defs/pianeta. Ogni elemento visivo deve corrispondere a un campo di questo schema.",
+  "oneOf": [{"$ref": "#/$defs/universo"}, {"$ref": "#/$defs/pianeta"}],
+  "$defs": {
+    "teoria": {
+      "type": "object", "additionalProperties": false,
+      "required": ["testo", "tipo", "accuratezza", "mendeleev", "legge_verificata", "taglia"],
+      "properties": {
+        "testo": {"type": ["string", "null"]},
+        "tipo": {"type": ["string", "null"], "enum": ["law", "table", "none", null]},
+        "accuratezza": {"type": "number"},
+        "mendeleev": {"type": "number"},
+        "legge_verificata": {"type": "boolean"},
+        "taglia": {"type": "integer"}
+      }
+    },
+    "criteri": {
+      "type": "object", "additionalProperties": false,
+      "required": ["legge_inventata", "verifica_codice", "controllo_battuto", "tracciabile"],
+      "properties": {
+        "legge_inventata": {"type": "boolean"},
+        "verifica_codice": {"type": "boolean"},
+        "controllo_battuto": {"type": "boolean"},
+        "tracciabile": {"type": "boolean"}
+      }
+    },
+    "traccia": {
+      "type": "object", "additionalProperties": false,
+      "required": ["chiave", "prompt_sha256", "token_in", "token_out"],
+      "properties": {
+        "chiave": {"type": "string"}, "prompt_sha256": {"type": "string"},
+        "token_in": {"type": "integer"}, "token_out": {"type": "integer"}
+      }
+    },
+    "agente": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "agente", "eredita_da", "esperimenti", "teorie", "tracce"],
+      "properties": {
+        "id": {"type": "string"}, "agente": {"type": "integer"},
+        "eredita_da": {"type": ["string", "null"]},
+        "esperimenti": {"type": ["string", "null"]}, "teorie": {"type": ["string", "null"]},
+        "tracce": {"type": "array", "items": {"$ref": "#/$defs/traccia"}}
+      }
+    },
+    "generazione": {
+      "type": "object", "additionalProperties": false,
+      "required": ["gen", "teoria", "agenti", "eredita"],
+      "properties": {
+        "gen": {"type": "integer"},
+        "teoria": {"$ref": "#/$defs/teoria"},
+        "agenti": {"type": "array", "items": {"$ref": "#/$defs/agente"}},
+        "eredita": {
+          "type": "object", "additionalProperties": false,
+          "required": ["reazioni", "calori", "combustibili", "forno"],
+          "properties": {
+            "reazioni": {"type": "integer"}, "calori": {"type": "integer"},
+            "combustibili": {"type": "integer"}, "forno": {"type": ["integer", "null"]}
+          }
+        }
+      }
+    },
+    "evento": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "gen", "tipo", "rif", "testo"],
+      "properties": {
+        "id": {"type": "string"}, "gen": {"type": "integer"},
+        "tipo": {"type": "string", "enum": ["nascita", "tabella_esatta", "scoperta"]},
+        "rif": {"type": "array", "items": {"type": "string"}},
+        "testo": {"type": "string"},
+        "criteri": {"$ref": "#/$defs/criteri"},
+        "lampo": {"type": "string", "enum": ["debole", "medio", "pieno"]}
+      }
+    },
+    "prova": {
+      "type": "object", "additionalProperties": false,
+      "required": ["gruppo", "rip", "inizio", "fine", "nuova_scoperta"],
+      "properties": {
+        "gruppo": {"type": "string", "enum": ["erede", "placebo"]},
+        "rip": {"type": "integer"},
+        "inizio": {"$ref": "#/$defs/teoria"}, "fine": {"$ref": "#/$defs/teoria"},
+        "nuova_scoperta": {"type": "boolean"}
+      }
+    },
+    "pianeta": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "universo", "seme", "escluso_r2e", "linea", "indovino", "binario", "eventi"],
+      "properties": {
+        "schema": {"type": "string", "enum": ["kosmai-log/1"]},
+        "universo": {"type": "string"}, "seme": {"type": "integer"},
+        "escluso_r2e": {"type": "boolean"},
+        "linea": {
+          "type": "object", "additionalProperties": false,
+          "required": ["generazioni_max", "scoperta_gen", "generazioni"],
+          "properties": {
+            "generazioni_max": {"type": "integer"},
+            "scoperta_gen": {"type": ["integer", "null"]},
+            "generazioni": {"type": "array", "items": {"$ref": "#/$defs/generazione"}}
+          }
+        },
+        "indovino": {
+          "type": "object", "additionalProperties": false,
+          "required": ["chiamate", "proposte", "valide", "leggi_valide", "finale"],
+          "properties": {
+            "chiamate": {"type": "integer"}, "proposte": {"type": "integer"},
+            "valide": {"type": "integer"}, "leggi_valide": {"type": "integer"},
+            "finale": {"$ref": "#/$defs/teoria"}
+          }
+        },
+        "binario": {
+          "type": ["object", "null"], "additionalProperties": false,
+          "required": ["partenza_gen", "prove"],
+          "properties": {
+            "partenza_gen": {"type": "integer"},
+            "prove": {"type": "array", "items": {"$ref": "#/$defs/prova"}}
+          }
+        },
+        "eventi": {"type": "array", "items": {"$ref": "#/$defs/evento"}}
+      }
+    },
+    "universo": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "id", "titolo", "domanda", "livello", "modello", "parametri", "preregistrazione",
+                   "esito", "token_totali", "limiti", "fonti", "pianeti"],
+      "properties": {
+        "schema": {"type": "string", "enum": ["kosmai-log/1"]},
+        "id": {"type": "string"}, "titolo": {"type": "string"}, "domanda": {"type": "string"},
+        "livello": {"type": "string"}, "modello": {"type": "string"},
+        "parametri": {"type": "object"},
+        "preregistrazione": {
+          "type": "object", "required": ["file", "sha256", "sha256_dichiarato_nei_risultati"],
+          "properties": {"file": {"type": "string"}, "sha256": {"type": "string"},
+                         "sha256_dichiarato_nei_risultati": {"type": "string"}}
+        },
+        "esito": {"type": "object", "required": ["R2e", "R3e", "lettura", "esclusi_per_rete"]},
+        "token_totali": {"type": "integer"},
+        "limiti": {"type": "array", "items": {"type": "string"}},
+        "fonti": {"type": "object"},
+        "pianeti": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["seme", "file", "scoperta_gen", "generazioni", "indovino_legge", "binario", "escluso_r2e"],
+            "properties": {
+              "seme": {"type": "integer"}, "file": {"type": "string"},
+              "scoperta_gen": {"type": ["integer", "null"]}, "generazioni": {"type": "integer"},
+              "indovino_legge": {"type": "boolean"}, "binario": {"type": "boolean"},
+              "escluso_r2e": {"type": "boolean"}
+            }
+          }
+        }
+      }
+    }
+  }
+}
