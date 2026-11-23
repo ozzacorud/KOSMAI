@@ -1,0 +1,3932 @@
+{
+ "fonte": "pianeta-<seme>.json + cultural_ratchet.calibrato.MondoCalibrato",
+ "livello": "D2",
+ "pianeti": [
+  {
+   "elementi": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7
+   ],
+   "generazioni": [
+    {
+     "accuratezza": 0.736,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 1,
+     "nascosto": 0,
+     "reazioni": 3,
+     "regioni": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.65,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 2,
+     "nascosto": 0,
+     "reazioni": 4,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 0.721,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 3,
+     "nascosto": 0,
+     "reazioni": 10,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 0.843,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 4,
+     "nascosto": 0,
+     "reazioni": 15,
+     "regioni": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.864,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 5,
+     "nascosto": 0,
+     "reazioni": 22,
+     "regioni": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.907,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 6,
+     "nascosto": 0,
+     "reazioni": 29,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 7,
+     "nascosto": 0,
+     "reazioni": 35,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 8,
+     "nascosto": 0,
+     "reazioni": 44,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 9,
+     "nascosto": 0,
+     "reazioni": 51,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 10,
+     "nascosto": 0,
+     "reazioni": 59,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 11,
+     "nascosto": 0,
+     "reazioni": 66,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 12,
+     "nascosto": 0,
+     "reazioni": 73,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 13,
+     "nascosto": 0,
+     "reazioni": 78,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 14,
+     "nascosto": 0,
+     "reazioni": 81,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 15,
+     "nascosto": 0,
+     "reazioni": 88,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 16,
+     "nascosto": 0,
+     "reazioni": 94,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 17,
+     "nascosto": 0,
+     "reazioni": 101,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 18,
+     "nascosto": 0,
+     "reazioni": 105,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 19,
+     "nascosto": 0,
+     "reazioni": 110,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 20,
+     "nascosto": 0,
+     "reazioni": 116,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 21,
+     "nascosto": 0,
+     "reazioni": 121,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.929,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 22,
+     "nascosto": 0,
+     "reazioni": 125,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": true,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 23,
+     "nascosto": 0,
+     "reazioni": 129,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": true,
+      "reazioni": true,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 24,
+     "nascosto": 1,
+     "reazioni": 133,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    }
+   ],
+   "generazioni_max": 40,
+   "nascosto": 4,
+   "scoperta_gen": 24,
+   "seme": 331,
+   "valenze_vere": {
+    "0": 5,
+    "1": 1,
+    "2": 3,
+    "3": 2,
+    "4": 5,
+    "5": 3,
+    "6": 1,
+    "7": 4
+   }
+  },
+  {
+   "elementi": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "generazioni": [
+    {
+     "accuratezza": 0.686,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 1,
+     "nascosto": 0,
+     "reazioni": 4,
+     "regioni": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.664,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 2,
+     "nascosto": 0,
+     "reazioni": 12,
+     "regioni": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.721,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 3,
+     "nascosto": 0,
+     "reazioni": 19,
+     "regioni": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.721,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 4,
+     "nascosto": 0,
+     "reazioni": 28,
+     "regioni": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.743,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 5,
+     "nascosto": 0,
+     "reazioni": 34,
+     "regioni": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.743,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 6,
+     "nascosto": 0,
+     "reazioni": 43,
+     "regioni": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.907,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 7,
+     "nascosto": 0,
+     "reazioni": 48,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.907,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 8,
+     "nascosto": 0,
+     "reazioni": 54,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.907,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 9,
+     "nascosto": 0,
+     "reazioni": 64,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 10,
+     "nascosto": 0,
+     "reazioni": 68,
+     "regioni": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 11,
+     "nascosto": 0,
+     "reazioni": 72,
+     "regioni": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 12,
+     "nascosto": 0,
+     "reazioni": 78,
+     "regioni": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.964,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 13,
+     "nascosto": 0,
+     "reazioni": 86,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.979,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 14,
+     "nascosto": 0,
+     "reazioni": 92,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 15,
+     "nascosto": 0,
+     "reazioni": 96,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 16,
+     "nascosto": 0,
+     "reazioni": 101,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 17,
+     "nascosto": 0,
+     "reazioni": 106,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 18,
+     "nascosto": 0,
+     "reazioni": 112,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 19,
+     "nascosto": 0,
+     "reazioni": 121,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 20,
+     "nascosto": 0,
+     "reazioni": 126,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 21,
+     "nascosto": 0,
+     "reazioni": 133,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 22,
+     "nascosto": 0,
+     "reazioni": 135,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 23,
+     "nascosto": 0,
+     "reazioni": 139,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 24,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 25,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 26,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 27,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 28,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 29,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 30,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 31,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 32,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 33,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 34,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 35,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 36,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 37,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 38,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 39,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.993,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 40,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    }
+   ],
+   "generazioni_max": 40,
+   "nascosto": 1,
+   "scoperta_gen": null,
+   "seme": 332,
+   "valenze_vere": {
+    "0": 4,
+    "1": 5,
+    "2": 1,
+    "3": 5,
+    "4": 3,
+    "5": 1,
+    "6": 3,
+    "7": 2
+   }
+  },
+  {
+   "elementi": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7
+   ],
+   "generazioni": [
+    {
+     "accuratezza": 0.671,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 1,
+     "nascosto": 0,
+     "reazioni": 5,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.643,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 2,
+     "nascosto": 0,
+     "reazioni": 5,
+     "regioni": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.614,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 3,
+     "nascosto": 0,
+     "reazioni": 9,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.736,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 4,
+     "nascosto": 0,
+     "reazioni": 18,
+     "regioni": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.836,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 5,
+     "nascosto": 0,
+     "reazioni": 23,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.864,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 6,
+     "nascosto": 0,
+     "reazioni": 29,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.864,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 7,
+     "nascosto": 0,
+     "reazioni": 37,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 8,
+     "nascosto": 0,
+     "reazioni": 44,
+     "regioni": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 9,
+     "nascosto": 0,
+     "reazioni": 50,
+     "regioni": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 10,
+     "nascosto": 0,
+     "reazioni": 57,
+     "regioni": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 11,
+     "nascosto": 0,
+     "reazioni": 64,
+     "regioni": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 12,
+     "nascosto": 0,
+     "reazioni": 73,
+     "regioni": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 13,
+     "nascosto": 0,
+     "reazioni": 79,
+     "regioni": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 14,
+     "nascosto": 0,
+     "reazioni": 87,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.979,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 15,
+     "nascosto": 0,
+     "reazioni": 94,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.979,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 16,
+     "nascosto": 1,
+     "reazioni": 100,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 0.979,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 17,
+     "nascosto": 1,
+     "reazioni": 105,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 18,
+     "nascosto": 1,
+     "reazioni": 108,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 19,
+     "nascosto": 1,
+     "reazioni": 114,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 20,
+     "nascosto": 1,
+     "reazioni": 119,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 21,
+     "nascosto": 1,
+     "reazioni": 125,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 22,
+     "nascosto": 1,
+     "reazioni": 130,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": true,
+     "gen": 23,
+     "nascosto": 1,
+     "reazioni": 137,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": true,
+     "gen": 24,
+     "nascosto": 1,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": true,
+     "gen": 25,
+     "nascosto": 1,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": true,
+     "gen": 26,
+     "nascosto": 1,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": true,
+     "gen": 27,
+     "nascosto": 1,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": true
+     },
+     "fermo": true,
+     "gen": 28,
+     "nascosto": 1,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": true,
+      "reazioni": true,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 29,
+     "nascosto": 1,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    }
+   ],
+   "generazioni_max": 40,
+   "nascosto": 4,
+   "scoperta_gen": 29,
+   "seme": 333,
+   "valenze_vere": {
+    "0": 1,
+    "1": 2,
+    "2": 3,
+    "3": 3,
+    "4": 5,
+    "5": 1,
+    "6": 4,
+    "7": 5
+   }
+  },
+  {
+   "elementi": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7
+   ],
+   "generazioni": [
+    {
+     "accuratezza": 0.65,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 1,
+     "nascosto": 0,
+     "reazioni": 4,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.707,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 2,
+     "nascosto": 0,
+     "reazioni": 8,
+     "regioni": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.679,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 3,
+     "nascosto": 0,
+     "reazioni": 8,
+     "regioni": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 0.679,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 4,
+     "nascosto": 0,
+     "reazioni": 12,
+     "regioni": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "law"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 5,
+     "nascosto": 0,
+     "reazioni": 21,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 6,
+     "nascosto": 0,
+     "reazioni": 31,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 7,
+     "nascosto": 0,
+     "reazioni": 37,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 8,
+     "nascosto": 0,
+     "reazioni": 44,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 9,
+     "nascosto": 0,
+     "reazioni": 54,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 10,
+     "nascosto": 0,
+     "reazioni": 60,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 11,
+     "nascosto": 0,
+     "reazioni": 68,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 12,
+     "nascosto": 0,
+     "reazioni": 75,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 13,
+     "nascosto": 0,
+     "reazioni": 81,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 14,
+     "nascosto": 0,
+     "reazioni": 87,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 15,
+     "nascosto": 0,
+     "reazioni": 93,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 16,
+     "nascosto": 0,
+     "reazioni": 102,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 17,
+     "nascosto": 0,
+     "reazioni": 110,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 18,
+     "nascosto": 0,
+     "reazioni": 115,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 19,
+     "nascosto": 0,
+     "reazioni": 119,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 20,
+     "nascosto": 0,
+     "reazioni": 123,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 21,
+     "nascosto": 0,
+     "reazioni": 126,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": true,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 22,
+     "nascosto": 0,
+     "reazioni": 130,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": true,
+      "reazioni": true,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 23,
+     "nascosto": 1,
+     "reazioni": 134,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    }
+   ],
+   "generazioni_max": 40,
+   "nascosto": 3,
+   "scoperta_gen": 23,
+   "seme": 334,
+   "valenze_vere": {
+    "0": 5,
+    "1": 1,
+    "2": 1,
+    "3": 5,
+    "4": 3,
+    "5": 2,
+    "6": 3,
+    "7": 4
+   }
+  },
+  {
+   "elementi": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "generazioni": [
+    {
+     "accuratezza": 0.671,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 1,
+     "nascosto": 0,
+     "reazioni": 4,
+     "regioni": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.729,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 2,
+     "nascosto": 0,
+     "reazioni": 6,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.657,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 3,
+     "nascosto": 0,
+     "reazioni": 12,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.857,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 4,
+     "nascosto": 0,
+     "reazioni": 21,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.879,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 5,
+     "nascosto": 0,
+     "reazioni": 28,
+     "regioni": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.921,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 6,
+     "nascosto": 0,
+     "reazioni": 34,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 7,
+     "nascosto": 0,
+     "reazioni": 41,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 8,
+     "nascosto": 0,
+     "reazioni": 48,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 9,
+     "nascosto": 0,
+     "reazioni": 53,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 10,
+     "nascosto": 0,
+     "reazioni": 60,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 11,
+     "nascosto": 0,
+     "reazioni": 69,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 12,
+     "nascosto": 0,
+     "reazioni": 75,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": true,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 13,
+     "nascosto": 0,
+     "reazioni": 79,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": false,
+      "reazioni": true,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 14,
+     "nascosto": 0,
+     "reazioni": 81,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 1.0,
+     "anelli": {
+      "legge": true,
+      "reazioni": true,
+      "tabella": true
+     },
+     "fermo": false,
+     "gen": 15,
+     "nascosto": 1,
+     "reazioni": 85,
+     "regioni": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "tipo": "law"
+    }
+   ],
+   "generazioni_max": 40,
+   "nascosto": 0,
+   "scoperta_gen": 15,
+   "seme": 335,
+   "valenze_vere": {
+    "0": 5,
+    "1": 2,
+    "2": 3,
+    "3": 1,
+    "4": 4,
+    "5": 1,
+    "6": 5,
+    "7": 3
+   }
+  },
+  {
+   "elementi": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7
+   ],
+   "generazioni": [
+    {
+     "accuratezza": 0.486,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 1,
+     "nascosto": 0,
+     "reazioni": 6,
+     "regioni": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.664,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 2,
+     "nascosto": 0,
+     "reazioni": 12,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.664,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 3,
+     "nascosto": 0,
+     "reazioni": 19,
+     "regioni": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.907,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 4,
+     "nascosto": 0,
+     "reazioni": 25,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 5,
+     "nascosto": 0,
+     "reazioni": 33,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 6,
+     "nascosto": 0,
+     "reazioni": 37,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.936,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 7,
+     "nascosto": 0,
+     "reazioni": 45,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 8,
+     "nascosto": 0,
+     "reazioni": 53,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.95,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 9,
+     "nascosto": 0,
+     "reazioni": 60,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 10,
+     "nascosto": 0,
+     "reazioni": 67,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 11,
+     "nascosto": 0,
+     "reazioni": 73,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 12,
+     "nascosto": 0,
+     "reazioni": 79,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 13,
+     "nascosto": 0,
+     "reazioni": 84,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": false,
+     "gen": 14,
+     "nascosto": 0,
+     "reazioni": 89,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 15,
+     "nascosto": 0,
+     "reazioni": 92,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 16,
+     "nascosto": 0,
+     "reazioni": 98,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 17,
+     "nascosto": 0,
+     "reazioni": 106,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 18,
+     "nascosto": 0,
+     "reazioni": 111,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 19,
+     "nascosto": 0,
+     "reazioni": 114,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 20,
+     "nascosto": 0,
+     "reazioni": 117,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 21,
+     "nascosto": 0,
+     "reazioni": 121,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 22,
+     "nascosto": 0,
+     "reazioni": 125,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 23,
+     "nascosto": 0,
+     "reazioni": 129,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 24,
+     "nascosto": 0,
+     "reazioni": 133,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 25,
+     "nascosto": 0,
+     "reazioni": 137,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 26,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 27,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 28,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 29,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 30,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 31,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 32,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 33,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 34,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 35,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 36,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 37,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 38,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 39,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    },
+    {
+     "accuratezza": 0.957,
+     "anelli": {
+      "legge": false,
+      "reazioni": false,
+      "tabella": false
+     },
+     "fermo": true,
+     "gen": 40,
+     "nascosto": 0,
+     "reazioni": 140,
+     "regioni": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "tipo": "table"
+    }
+   ],
+   "generazioni_max": 40,
+   "nascosto": 6,
+   "scoperta_gen": null,
+   "seme": 336,
+   "valenze_vere": {
+    "0": 5,
+    "1": 3,
+    "2": 1,
+    "3": 3,
+    "4": 1,
+    "5": 2,
+    "6": 5,
+    "7": 4
+   }
+  }
+ ],
+ "schema": "kosmai-evoluzione/1",
+ "universo": "conferma-d2"
+}
