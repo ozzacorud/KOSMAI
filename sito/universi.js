@@ -85,7 +85,8 @@
     let s = "";
     G.scambi.forEach((c) => {
       const [x1, y1] = pos(c.da), [x2, y2] = pos(c.a);
-      s += `<path class="filo" d="M${x1},${y1} Q${(x1 + x2) / 2},${Math.min(y1, y2) - 80} ${x2},${y2}"><title>Scambio di conoscenza tra universi: fase futura, non ancora nei dati</title></path>`;
+      const vero = c.stato === "vero";
+      s += `<path class="filo${vero ? " filo-vero" : ""}" d="M${x1},${y1} Q${(x1 + x2) / 2},${Math.min(y1, y2) - 80} ${x2},${y2}"${vero ? ' style="opacity:.95;stroke-width:2.4"' : ""}><title>${vero ? esc(c.esito) : "Scambio di conoscenza tra universi: fase futura, non ancora nei dati"}</title></path>`;
     });
     G.galassie.forEach((g, i) => {
       const [x, y] = pos(g.id), r = g.stato === "esplorabile" ? 110 : g.stato === "futura" ? 70 : 70;
@@ -101,7 +102,7 @@
           s += `<circle cx="${(x + Math.cos(a) * d).toFixed(0)}" cy="${(y + Math.sin(a) * d * 0.45).toFixed(0)}" r="${(0.5 + rr()).toFixed(1)}" fill="#fff" opacity="${(0.3 + rr() * 0.6).toFixed(2)}"/>`;
         }
       }
-      const sotto = g.stato === "esplorabile" ? `${g.pianeti} pianeti · entra` : g.stato === "futura" ? "fase futura" : `${g.pianeti} pianeti · dati da esportare`;
+      const sotto = g.stato === "esplorabile" ? `${g.pianeti} pianeti · entra` : g.stato === "futura" ? "fase futura" : g.stato === "scambio" ? `${g.pianeti} pianeti · ha ricevuto conoscenza` : `${g.pianeti} pianeti · dati da esportare`;
       s += `<text x="${x}" y="${y + r * 0.45 + 24}" text-anchor="middle" class="etichetta">${esc(g.nome)}</text>`;
       s += `<text x="${x}" y="${y + r * 0.45 + 40}" text-anchor="middle" class="etichetta-sotto">${esc(sotto)}</text></g>`;
     });
@@ -116,7 +117,7 @@
         if (g.stato === "esplorabile") return vai(g.id);
         const sc = $("scheda");
         sc.hidden = false;
-        sc.innerHTML = `<strong>${esc(g.nome)}</strong> · ${esc(g.descrizione)}<br><span class="tenue" style="color:var(--tenue)">${g.stato === "futura" ? "Non esiste ancora: serve un esperimento nuovo." : "I dati grezzi ci sono (" + esc(g.fonte) + "), l'esportazione per il sito è il prossimo passo."}</span>`;
+        sc.innerHTML = `<strong>${esc(g.nome)}</strong> · ${esc(g.descrizione)}<br><span class="tenue" style="color:var(--tenue)">${g.stato === "futura" ? "Non esiste ancora: serve un esperimento nuovo." : g.esito ? esc(g.esito) : "I dati grezzi ci sono (" + esc(g.fonte) + "), l'esportazione per il sito è il prossimo passo."}</span>`;
       };
       el.addEventListener("click", apri);
       el.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); apri(); } });

@@ -80,3 +80,9 @@ casuali. Quei dati si possono esportare e disegnare come bagliori veri a costo z
   transizioni un passo alla volta con evidenza del tipo richiesto, verificatore diverso dal proponente, sigillo sha256.
   Le 4 scoperte della conferma arrivano a `generalized`, nessuna oltre.
 - Passo 3 fatto: Universo B (`UNIVERSO-B.md`), tutte e tre le previsioni confermate.
+
+## Aggiornamento 23/11 sera
+
+- Passo 4 fatto: scambio fra universi con civiltà di Sonnet (`SCAMBIO-LLM.md`), verde: legge di B trovata 12/12 con
+  il dono contro 2/12 con il placebo, adozione cieca 0/12, circa 2M token. La riga "Fase 5" della matrice non è più
+  "mai con agenti LLM".
